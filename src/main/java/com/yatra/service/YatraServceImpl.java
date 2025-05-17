@@ -28,7 +28,8 @@ public class YatraServceImpl implements YatraService {
 		    bodyValue(pass). 
 		    retrieve(). 
 		    bodyToMono(Ticket.class). 
-		    block(); 
+		    block();
+		  System.out.println(ticket);
 		  return ticket; 
 	}
 
